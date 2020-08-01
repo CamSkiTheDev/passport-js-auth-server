@@ -1,0 +1,39 @@
+{
+  "name": "passport-js-auth-server",
+  "version": "1.0.0",
+  "description": "boilerplate for a RESTful express and passport auth server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamSkiTheDev/passport-js-auth-server.git"
+  },
+  "author": "Cameron Lucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CamSkiTheDev/passport-js-auth-server/issues"
+  },
+  "homepage": "https://github.com/CamSkiTheDev/passport-js-auth-server#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "mongoose": "^5.9.27",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}

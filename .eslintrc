@@ -1,0 +1,20 @@
+{
+    "parser": "babel-eslint",
+    "extends": "prettier",
+    "plugins": [
+        "eslint-plugin-prettier"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 80,
+                "tabWidth": 4,
+                "trailingComma": "es5",
+                "semi": false,
+                "singleQuote": true,
+                "endOfLine": "auto"
+            }
+        ]
+    }
+}

@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
+const passport = require('passport')
 
 // Connect to the database
 mongoose.connect(
@@ -16,6 +17,8 @@ mongoose.connect(
 
 const app = express()
 const port = process.env.SERVER_PORT || 4001
+
+require('./passport/passport')(passport)
 
 app.use(cors())
 app.use(express.json())

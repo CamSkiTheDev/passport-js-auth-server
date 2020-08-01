@@ -6,4 +6,7 @@ module.exports = (passport) => {
     passport.deserializeUser((id, done) =>
         UserSchema.findOne({ _id: id }).then((user) => done(null, user))
     )
+
+    require('./passport-local')(passport)
+    require('./passport-jwt')(passport)
 }

@@ -22,6 +22,7 @@ require('./passport/passport')(passport)
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(passport.initialize())
 
 require('./routes/index')(app)
 require('./routes/auth/login')(app, passport)
